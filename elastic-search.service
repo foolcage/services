@@ -9,9 +9,9 @@ Type=simple
 User=xuanqi
 Group=xuanqi
 Environment=JAVA_HOME=/usr/lib/jvm/java-8-oracle
-Environment=ES_HOME=/home/xuanqi/software/elasticsearch-6.3.0
+Environment=ES_HOME=/home/xuanqi/software/elasticsearch-6.3.1
 Environment="ES_JAVA_OPTS=-Xms8g -Xmx8g"
-ExecStart=/home/xuanqi/software/elasticsearch-6.3.0/bin/elasticsearch
+ExecStart=/home/xuanqi/software/elasticsearch-6.3.1/bin/elasticsearch
 
 [Install]
 WantedBy=multi-user.target
