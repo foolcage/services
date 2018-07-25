@@ -1,0 +1,16 @@
+[Unit]
+Description=kibana service
+Documentation=https://www.elastic.co/guide/index.html
+Requires=network.target remote-fs.target
+After=network.target remote-fs.target 
+
+[Service]
+Type=simple
+User=xuanqi
+Group=xuanqi
+Environment=JAVA_HOME=/usr/lib/jvm/java-8-oracle
+Environment=KIBANA_HOME=/home/xuanqi/software/kibana-6.3.1-linux-x86_64
+ExecStart=/home/xuanqi/software/kibana-6.3.1-linux-x86_64/bin/kibana
+
+[Install]
+WantedBy=multi-user.target
